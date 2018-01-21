@@ -36,3 +36,6 @@ var b = schedule.scheduleJob(textTwo, function(){
   console.log('Today is recognized by Rebecca Black!');
   sendText("I'm Ok");
 });
+
+
+// This is comment
