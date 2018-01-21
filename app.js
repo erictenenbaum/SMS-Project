@@ -37,7 +37,7 @@ textOne.minute =44;
 
 var a = schedule.scheduleJob(textOne, function(){
   console.log('Today is recognized by Rebecca Black!');
-  sendText(recipientNumber, twilioNumber, "Hey how are you");
+  sendText(recipientNumber, twilioNumber, "Test 2");
 });
 
 
@@ -49,7 +49,7 @@ textTwo.minute =35;
 
 var b = schedule.scheduleJob(textTwo, function(){
   console.log('Today is recognized by Rebecca Black!');
-  sendText(recipientNumber, twilioNumber, "I'm Ok");
+  sendText(recipientNumber, twilioNumber, "Test 1");
 });
 
 
@@ -61,7 +61,7 @@ textThree.minute =05;
 
 var c = schedule.scheduleJob(textThree, function(){
   console.log('Today is recognized by Rebecca Black!');
-  sendText(recipientNumber, twilioNumber,"I'm Ok");
+  sendText(recipientNumber, twilioNumber,"Test 3");
 });
 
 
