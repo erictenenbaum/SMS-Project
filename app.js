@@ -31,8 +31,8 @@ function sendText(recipient, tNumber, randomText) {
 
 var textOne = new schedule.RecurrenceRule();
 textOne.dayOfWeek = [0, new schedule.Range(1, 6)];
-textOne.hour = 11;
-textOne.minute =04;
+textOne.hour = 14;
+textOne.minute =44;
 
 
 var a = schedule.scheduleJob(textOne, function(){
