@@ -1,6 +1,6 @@
 require("dotenv").config();
 var keys = require("./keys.js");
-// var schedule = require('node-schedule');
+var schedule = require('node-schedule');
 var later = require("later");
 
 const accountSid = keys.apikeys.accountSid;
