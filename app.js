@@ -51,6 +51,8 @@ var b = schedule.scheduleJob(textTwo, function(){
 });
 
 
+sendText("Hey you");
+
 
 
 
