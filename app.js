@@ -34,7 +34,7 @@ function sendText(recipient, tNumber, randomText) {
 var textOne = new schedule.RecurrenceRule();
 textOne.dayOfWeek = [0, new schedule.Range(1, 6)];
 textOne.hour = 18;
-textOne.minute =08;
+textOne.minute =45;
 
 
 var a = schedule.scheduleJob(textOne, function(){
@@ -45,7 +45,7 @@ var a = schedule.scheduleJob(textOne, function(){
 
 var textTwo = new schedule.RecurrenceRule();
 textTwo.dayOfWeek = [0, new schedule.Range(1, 6)];
-textTwo.hour = 13;
+textTwo.hour = 19;
 textTwo.minute =35;
 
 
@@ -57,7 +57,7 @@ var b = schedule.scheduleJob(textTwo, function(){
 
 var textThree = new schedule.RecurrenceRule();
 textThree.dayOfWeek = [0, new schedule.Range(1, 6)];
-textThree.hour = 16;
+textThree.hour = 20;
 textThree.minute =05;
 
 
