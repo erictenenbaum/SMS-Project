@@ -1,5 +1,7 @@
 require("dotenv").config();
 var keys = require("./keys.js");
+
+console.log(keys);
 var schedule = require('node-schedule');
 var later = require("later");
 
@@ -32,7 +34,7 @@ function sendText(recipient, tNumber, randomText) {
 var textOne = new schedule.RecurrenceRule();
 textOne.dayOfWeek = [0, new schedule.Range(1, 6)];
 textOne.hour = 18;
-textOne.minute =06;
+textOne.minute =08;
 
 
 var a = schedule.scheduleJob(textOne, function(){
@@ -65,7 +67,7 @@ var c = schedule.scheduleJob(textThree, function(){
 });
 
 
-// sendText(recipientNumber, twilioNumber, "Please tell me this finally works");
+sendText(recipientNumber, twilioNumber, "Please tell me this finally works");
 
 // 
 
