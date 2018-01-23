@@ -31,8 +31,8 @@ function sendText(recipient, tNumber, randomText) {
 
 var textOne = new schedule.RecurrenceRule();
 textOne.dayOfWeek = [0, new schedule.Range(1, 6)];
-textOne.hour = 14;
-textOne.minute =44;
+textOne.hour = 18;
+textOne.minute =06;
 
 
 var a = schedule.scheduleJob(textOne, function(){
@@ -67,7 +67,7 @@ var c = schedule.scheduleJob(textThree, function(){
 
 // sendText(recipientNumber, twilioNumber, "Please tell me this finally works");
 
-// console.log(typeof twilioNumber)
+// 
 
 
 
