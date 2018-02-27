@@ -1,7 +1,7 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 
-console.log(keys);
+// console.log(keys);
 var schedule = require('node-schedule');
 var later = require("later");
 
@@ -37,9 +37,8 @@ textOne.hour = 18;
 textOne.minute =45;
 
 
-var a = schedule.scheduleJob(textOne, function(){
-  console.log('Today is recognized by Rebecca Black!');
-  sendText(recipientNumber, twilioNumber, "Test 2");
+var a = schedule.scheduleJob(textOne, function(){  
+  sendText(recipientNumber, twilioNumber, "Test 1");
 });
 
 
@@ -50,8 +49,7 @@ textTwo.minute =35;
 
 
 var b = schedule.scheduleJob(textTwo, function(){
-  console.log('Today is recognized by Rebecca Black!');
-  sendText(recipientNumber, twilioNumber, "Test 1");
+  sendText(recipientNumber, twilioNumber, "Test 2");
 });
 
 
@@ -62,12 +60,11 @@ textThree.minute =05;
 
 
 var c = schedule.scheduleJob(textThree, function(){
-  console.log('Today is recognized by Rebecca Black!');
   sendText(recipientNumber, twilioNumber,"Test 3");
 });
 
 
-sendText(recipientNumber, twilioNumber, "Please tell me this finally works");
+sendText(recipientNumber, twilioNumber, "Initial Test");
 
 // 
 
